@@ -1,9 +1,20 @@
 # Next Steps
-## 1) Download WordPress and Extract Its Contents into the 'src' Folder
-You can download WordPress manually and then extract its contents to the 'src' folder. Alternatively, you can use the following command within the repository folder:
+## 1) Download WordPress
+You can download [WordPress](https://wordpress.org/latest.tar.gz)
+ manually and then extract its contents to the 'src' folder. Alternatively, you can use the following command within the repository folder:
 
 ```    
-wget -O wordpress.tar.gz https://wordpress.org/latest.tar.gz && mkdir -p src  && tar -xf wordpress.tar.gz -C src --strip-components=1  && rm -rf wordpress.tar.gz 
+# Download WordPress archive
+wget -O wordpress.tar.gz https://wordpress.org/latest.tar.gz
+
+# Create the 'src' directory if it doesn't exist
+mkdir -p src
+
+# Extract the contents of the downloaded archive to the 'src' directory
+tar -xf wordpress.tar.gz -C src --strip-components=1
+
+# Remove the downloaded archive file
+rm -rf wordpress.tar.gz
 ```
 
 
@@ -15,10 +26,11 @@ sudo chown -R www-data:www-data ./src/wp-content
 
 ### 3) Rename wp-config-sample.php to wp-config.php
 ```
-    # You can use this commands
-    cd ./src/
-    mv wp-config-sample.php wp-config.php
-    cd ..
+# You can use this commands
+mkdir -p src
+cd ./src/
+mv wp-config-sample.php wp-config.php
+cd ..
 ```
 
 ### 4) Make the Following Changes in 'wp-config.php'
