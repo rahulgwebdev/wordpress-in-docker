@@ -62,7 +62,7 @@ define( 'DB_HOST', 'mariadb' );
 docker-compose up --build
 # open the following url on http://localhost
 ```
-### 6) (optional) open phpMyAdmin (mysql client)
+### 6) (optional) open phpMyAdmin - mariadb client
     username - root
     password - rootpassword
     # http://localhost:8085
