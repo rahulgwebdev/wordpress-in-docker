@@ -37,22 +37,22 @@ cd ..
 These changes are necessary to enable plugin installation and configure the database settings:
 
 ```
-    // ** these two lines required to install plugins  ** //
-    define( 'FS_METHOD', 'direct' );
-    define( 'UPLOADS', 'wp-content/uploads' );
+// ** these two lines required to install plugins  ** //
+define( 'FS_METHOD', 'direct' );
+define( 'UPLOADS', 'wp-content/uploads' );
 
-    // ** Database settings - You can get this info from your web host ** //
-    /** The name of the database for WordPress */
-    define( 'DB_NAME', 'wordpress' );
+// ** Database settings - You can get this info from your web host ** //
+/** The name of the database for WordPress */
+define( 'DB_NAME', 'wordpress' );
 
-    /** Database username */
-    define( 'DB_USER', 'wordpress' );
+/** Database username */
+define( 'DB_USER', 'wordpress' );
 
-    /** Database password */
-    define( 'DB_PASSWORD', 'wordpresspassword' );
+/** Database password */
+define( 'DB_PASSWORD', 'wordpresspassword' );
 
-    /** Database hostname */
-    define( 'DB_HOST', 'mariadb' );
+/** Database hostname */
+define( 'DB_HOST', 'mariadb' );
 ```
 
 ### 5) Build and start the containers
